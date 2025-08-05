@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Hello</h1>
+<h2>world</h2>
+<h3>hello world</h3>
+    <script>
+//  let x = "";
+// const myObj = {
+//   name: "John",
+//   age: 30,
+//   cars: [
+//     {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+//     {name:"BMW", models:["320", "X3", "X5"]},
+//     {name:"Fiat", models:["500", "Panda"]}
+//   ]
+// }
+
+// for (let i in myObj.cars) {
+//   x += "<h2>" + myObj.cars[i].name + "</h2>";
+//   for (let j in myObj.cars[i].models) {
+//     x += myObj.cars[i].models[j] + "<br>";
+//   }
+// }
+        const name ="Him Zhiangtong";
+        const specialization = "Computer Science";
+        const generation = "11";
+        const department = "CS";
+        const age = 19;
+
+        console.log (`Full Name: ${name}\nSpecialization: ${specialization}\nGeneration: ${generation}\nDepartment: ${department}\n Age: ${age}\n`);
+        
+        console.log ('Full Name:' + name + "\nDepartment:" + department);
+        
+        //to know what datatype is it
+        console.log (typeof name);
+        
+        //to change the datatype and print value
+        console.log (parseInt (generation));
+
+        //to change from type of "string to number" and print datatype
+        console.log (typeof (parseInt (generation)));
+
+        // ==
+        if ( "121" == 121)
+    {
+        console.log ("equal");  
+    }
+    // === datatype the same and
+        if ( "121" === 121)
+    {
+        console.log ("Equal");
+    } else {
+        console.log ("Not equal");
+    }
+
+    
+        const cars = ["toyota", "mazda"];
+        let car = cars[0];
+        console.log (car);
+    //.push()
+        cars.push ("tesla");
+        console.log (cars); // to call out all the input
+
+    //.length
+        console.log (cars.length);
+    
+    //Ex1
+    let programs = ["C", "C++"];
+        let x = programs.length -1;
+            //print the first element
+                console.log (programs[0]);
+            //print the last element
+                console.log ( programs[x]);
+
+            //update the second element
+                programs[1] ="Javascript";
+                console.log ( programs);
+
+            //Add the element
+                programs.push ("C#");
+                console.log (programs);
+
+    //Ex2
+    const laptop = {
+        brand: "ASUS",
+        RAM: "16gb",
+        SSD: "512GB",
+        CPU: "core i5",
+    };
+
+        //access those properties to create a sentences
+            console.log(`Brand of the laptop: ${laptop.brand}\nRAM: ${laptop.RAM}\nSSD: ${laptop.SSD}\nCPU: ${laptop.CPU}\n`);
+
+        //Update a properties value
+            laptop.CPU = "Core i7";
+            console.log (`Update version of it: CPU: ${laptop.CPU}\n`)
+
+        //Add a new property
+            laptop.id = 12345678901234;
+            console.log ( laptop);
+
+        //Delete a properties
+            delete laptop.CPU;
+
+        //console.log (`After we delete(CPU): ${laptop.CPU}`);
+            console.log ( laptop);
+
+    
+
+
+    </script>
+</body>
+</html>
