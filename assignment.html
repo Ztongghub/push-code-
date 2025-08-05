@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log ( "Hello");
+
+        //1. chech datatype using typeof
+        console.log ("\n1.");
+            const name ="Alice";
+            const age = 25;
+            const height = 5.9;
+            const isStudent = true;
+            const nothingHere = null; //ans: object
+            let notDefined; // dont use const
+
+            console.log (`Type of datatype of name: ${typeof(name)}`);
+            console.log (`Type of datatype of age: ${typeof (age)}`);
+            console.log (`Type of datatype of height: ${typeof (height)}`);
+            console.log (`Type of datatype of isStudent: ${typeof (isStudent)}`);
+            console.log (`Type of datatype of nothingHere: ${typeof (nothingHere)}`);
+            console.log (`Type of datatype of notDefined: ${typeof (notDefined)}`);
+        
+        //2.Create a float with value 3.14 then convert it to an int
+        console.log ("\n2.");
+
+        const number = 3.14;
+        let x = parseInt(number);
+        console.log (`Float: ${number} --> integer is: ${x} `)
+    
+        //3. for loop 1 -20
+        console.log ("\n3.");
+
+        console.log (`Even number:`);
+        for ( let i= 0; i <= 20; i+= 2)
+        {
+            console.log ( i);
+        }
+
+        //4. for loop 1 -20
+        console.log ("\n4.");
+
+        console.log (`Odd number:`);
+        for ( let i= 0; i <= 20; i++)
+        {
+            if ( i % 2 == 1)
+            console.log (`${i}\n`);
+        }
+
+        //5. loop
+        console.log ("\n5.");
+
+        const fruits = ["apple", "banana", "cherry", "mango", "orange"];
+        let num_of_fruit = fruits.length -1;
+        //find the first and last fruit
+        console.log (`The first fruit is: ${fruits[0]}\n`);
+        console.log (`The last fruit is: ${fruits[num_of_fruit]}`);
+
+        //add grape at the end
+        fruits.push("Grape");
+        //fruits[1] = "Grape";
+        //delete the banana
+        fruits.splice(1,1)  //fruits.splice(start_index, stop_index)
+        console.log (fruits);
+        
+        //from lowercase to uppercase
+        for ( let i = 0; i <= num_of_fruit;i++)
+        {
+            const Upperfruit =fruits[i].toUpperCase();
+            console.log (Upperfruit);
+        }
+        
+       /* //replace the banana with grape
+        fruits[1] = "Grape";
+
+        OR if you know the name but not index
+        use indexOf()
+
+        const x = fruits.indexOf("banana");
+        if ( x !== -1)
+        { 
+            fruit[x] = "Grape"; //this will replace banana with grape
+        }
+        
+        //this will uppercase all in array
+        const upperFruit = fruits.map (n => fruits.uppercase());
+        console.log ( upperFruit);
+
+        // map creates a new array
+const doubled = [1, 2, 3].map(n => n * 2);  // [2, 4, 6]
+
+// forEach just runs code, doesn't return a new array
+[1, 2, 3].forEach(n => console.log(n * 2)); // prints 2, 4, 6
+       */
+
+       
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
